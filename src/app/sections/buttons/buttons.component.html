@@ -1,11 +1,11 @@
 <app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'button.html'">
   <p>Button options availiable in the library.</p>
-
-  <div *ngFor="let button of buttons"  class="flex row elements-margin-right margin-top-16">
-      <div *ngFor="let b of button">
-        <initiafy-button design="{{ b.design }}" color="{{ b.color }}" label="{{ b.design }}"
-          icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
-      </div>
+  <app-button></app-button>
+  <div *ngFor="let button of buttons" class="flex row elements-margin-right margin-top-16">
+    <div *ngFor="let b of button">
+      <initiafy-button design="{{ b.design }}" color="{{ b.color }}" label="{{ b.design }}" icon="{{ b.icon }}"
+        iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
+    </div>
   </div>
-    
+
 </app-documentation>

@@ -23,6 +23,8 @@ import {
 } from './layout';
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { SharedModule } from './shared/shared.modules';
+import { ButtonComponent } from './sections/buttons/button/button.component';
+import { ButtonDirective } from './sections/buttons/button.directive';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -45,7 +47,9 @@ export function startupServiceFactory(
     FooterComponent,
     StructureComponent,
     ContentComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ButtonComponent,
+    ButtonDirective
   ],
   imports: [
     BrowserModule,
